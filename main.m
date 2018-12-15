@@ -8,9 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-#import "Song.h"
+//#import "Song.h"
+#import "Student.h"
 
-int main(int argc, const char* argv[]) {
+int main(int argc, const char *argv[]) {
   //    const char* cstr = "hello, c";
   //    NSString* nsstr = [[NSString alloc] initWithUTF8String:cstr];
   //    NSLog(@"nsstr = %@", nsstr);
@@ -22,11 +23,14 @@ int main(int argc, const char* argv[]) {
   //    PopularSong* song = [[PopularSong alloc] init];
   //
   //    [song description];
+
+  //    Song* song =[[Song alloc] init];
+  //
+  //    song.artist = @"Tony Stack";
+  //    NSLog(@"属性访问: %@", song.artist);
     
-    Song* song =[[Song alloc] init];
-    
-    song.artist = @"Tony Stack";
-    NSLog(@"属性访问: %@", song.artist);
+    Student* student = [[Student alloc] init];
+    NSLog(@"%@", [student getInfo]);
 
   return 0;
 };
